@@ -4,7 +4,7 @@ declare var elliptic: any;
 const ec = new elliptic.ec('secp256k1');
 
 @Component({
-  selector: 'blockchain-signing-transactions',
+  selector: 'app-signing-transactions',
   templateUrl: './signing-transactions.component.html',
   styleUrls: ['./signing-transactions.component.scss']
 })

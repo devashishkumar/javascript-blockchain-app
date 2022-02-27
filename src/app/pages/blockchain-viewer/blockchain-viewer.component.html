@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Blocks on chain</h1>
+    <p>Each Block represents a block of chain. Click on a block to see transactions.</p>
+
+    <div *ngFor="let block of blocks">
+        <app-block-view [block]="block" (click)="updateSelectedBlock(block)"></app-block-view>
+    </div>
+    <div style="clear:both;"></div>
+</div>
+
+<br /><br />
+<div class="container">
+    <h1>Block Transactions</h1>
+    <app-block-transactions [transactions]="selectedBlock.transactions"></app-block-transactions>
+</div>

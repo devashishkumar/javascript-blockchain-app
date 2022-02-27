@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BlockchainService, Block, Transaction } from '../services/blockchain.service';
 
 @Component({
-  selector: 'blockchain-mining-reward',
+  selector: 'app-mining-reward',
   templateUrl: './mining-reward.component.html',
   styleUrls: ['./mining-reward.component.scss']
 })
