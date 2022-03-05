@@ -35,6 +35,20 @@ export class BlockchainAppService {
     });
   }
 
+  addTransaction(transaction) {
+    this.blockchainInst.addTransaction(transaction);
+  }
+
+  getPendingTransactions() {
+    return this.blockchainInst.pendingTransactions;
+  }
+
+  minePendingTransactions() {
+    this.blockchainInst.miningPendingTransactions(
+      this.walletKeys[0].publicKey
+    );
+  }
+
   getBlocks() {
     return this.blockchainInst.chain;
   }

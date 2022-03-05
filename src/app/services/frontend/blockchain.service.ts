@@ -116,7 +116,7 @@ class Transaction {
   amount;
   signature = '';
   timestamp = new Date();
-  constructor(_from: any, _to: string, _amount: any) {
+  constructor(_from: any = '', _to: string = '', _amount: any = '') {
     this.fromAddress = _from;
     this.toAddress = _to;
     this.amount = _amount;

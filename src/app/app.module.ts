@@ -10,6 +10,9 @@ import { FrontendComponent } from './frontend/frontend.component';
 import { BlockchainViewerComponent } from './pages/blockchain-viewer/blockchain-viewer.component';
 import { BlockViewComponent } from './components/block-view/block-view.component';
 import { BlockTransactionsComponent } from './components/block-transactions/block-transactions.component';
+import { CreateTransactionComponent } from './pages/create-transaction/create-transaction.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { PendingTransactionsComponent } from './pages/pending-transactions/pending-transactions.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { BlockTransactionsComponent } from './components/block-transactions/bloc
     FrontendComponent,
     BlockchainViewerComponent,
     BlockViewComponent,
-    BlockTransactionsComponent
+    BlockTransactionsComponent,
+    CreateTransactionComponent,
+    SettingsComponent,
+    PendingTransactionsComponent
   ],
   imports: [
     BrowserModule,
